@@ -16,13 +16,13 @@ main {
 }
 
 .row img {
-    width: 250px;
+    max-height: 160px;
     margin: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .img_container {
-    height: 270px;
+    height: 180px;
     margin: auto;
 }
 
