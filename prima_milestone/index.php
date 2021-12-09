@@ -89,14 +89,12 @@ $albums = [
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Milestone1</title>
   </head>
   <body>
     <header>
@@ -106,14 +104,12 @@ $albums = [
     </header>
     
     <main>
-        <div class="row p-5">
+        <div class="row p-5 justify-content-center">
             <?php
                 foreach ($albums as $album) { ?>
                     <div class="col-2">
-                        <div class="card py-3 mb-3">
-                            <div class= "img_container">
-                                <img src="<?php echo $album['poster'] ?>" alt="">
-                            </div>
+                        <div class="card p-3">
+                            <img src="<?php echo $album['poster'] ?>" alt="">
                             <h4>
                                 <?php echo $album['title'] ?>
                             </h4>

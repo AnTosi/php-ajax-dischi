@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style/style.css">
-    <title>Document</title>
+    <title>Milestone2</title>
 </head>
 <body>
     <div id="app">
@@ -19,19 +19,18 @@
                 <img src="../assets/img/spot_logo.png" alt="">
             </div>
         </header>
-
-        <div class="container">
-            <div class="row">
+        <main>
+            <div class="row p-5 justify-content-center">
                 <div class="col-2" v-for="album in albums">
-                    <div class="card">
+                    <div class="card p-3">
                         <img :src="album.poster" :alt="album.title">
                         <h4>{{album.title}}</h4>
                         <h5>{{album.author}}</h5>
                     </div>
-
                 </div>
             </div>
-        </div>
+
+        </main>
 
     </div>
 
