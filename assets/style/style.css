@@ -1,0 +1,40 @@
+header {
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2E3A46;
+}
+body {
+    background-color: #1E2D3B;
+}
+header img {
+    height: 50px;
+}
+
+main {
+    background-color: #1E2D3B;
+}
+
+.row img {
+    width: 250px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.img_container {
+    height: 270px;
+    margin: auto;
+}
+
+.card {
+    background-color: #2E3A46;
+    height: 95%;
+}
+
+h4, h5 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

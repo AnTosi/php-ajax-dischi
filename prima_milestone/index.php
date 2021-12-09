@@ -96,12 +96,35 @@ $albums = [
 
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../assets/style/style.css">
   </head>
   <body>
     <header>
-        
+        <div class="mx-3">
+            <img src="../assets/img/spot_logo.png" alt="">
+        </div>
     </header>
+    
+    <main>
+        <div class="row p-5">
+            <?php
+                foreach ($albums as $album) { ?>
+                    <div class="col-2">
+                        <div class="card py-3 mb-3">
+                            <div class= "img_container">
+                                <img src="<?php echo $album['poster'] ?>" alt="">
+                            </div>
+                            <h4>
+                                <?php echo $album['title'] ?>
+                            </h4>
+                            <h5>
+                                <?php echo $album['author'] ?>
+                            </h5>
+                        </div>
+                    </div>
+              <?php  } ?>
+        </div>
+    </main>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
