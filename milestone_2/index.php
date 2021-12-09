@@ -20,6 +20,18 @@
             </div>
         </header>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-2" v-for="album in albums">
+                    <div class="card">
+                        <img :src="album.poster" :alt="album.title">
+                        <h4>{{album.title}}</h4>
+                        <h5>{{album.author}}</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </div>
 
