@@ -47,3 +47,23 @@ h4, h5 {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+.selector label {
+    height: 25px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: 0;
+    border: 1px solid white;
+}
+
+.selector select {
+    height: 25px;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}

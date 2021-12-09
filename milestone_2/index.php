@@ -20,6 +20,25 @@
             </div>
         </header>
         <main>
+            <div class="selector mx-3">
+                <div class="my-3">
+                    <label for="filter-author" class="px-2">Filter albums by author:</label><select name="filter-author" id="filter-author" v-model="filterByAuthor">
+                        <option value="all">All</option>
+                        <option v-for="artist in artists" :value="artist">
+                            {{artist}}
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="filter-genre" class="px-2">Filter albums by genre:</label><select name="filter-genre" id="filter-genre" v-model="filterByGenre">
+                        <option value="all">All</option>
+                        <option v-for="genre in genres" :value="genre">
+                            {{genre}}
+                        </option>
+                    </select>
+                </div>
+            </div>
             <div class="row p-5 justify-content-center">
                 <div class="col-2" v-for="album in albums">
                     <div class="card p-3">
